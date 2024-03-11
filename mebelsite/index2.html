@@ -22,7 +22,7 @@
 
 
 
-<body class="" style="margin:0;"><!--allrecords-->
+<body class="" style="margin:0;">
 <div class="container" style="">
 
 			<div class="col-12 col-md-12 fadeInUp wow" style="padding-top:30px;">
@@ -85,10 +85,7 @@
 
 <script src="script.js"></script>
 
-<!-- /T396 -->
 
-
-<!-- /block2 -->
 
 <section class="test">
 	<div class="container fadeInUp wow" style="">
@@ -148,14 +145,11 @@
 let list = document.querySelectorAll("ul li");
 let content = Array.from(document.querySelectorAll(".content div"));
 
-// [1] At onclick on list remove all active class from all list
-// [2] add class active to this li click
-// [3] (.content div) remove all class active from div array
-// [4] add active class To div one when tap1 contain active class etc.
+
 
 list.forEach((li) => {
   li.addEventListener("click", (e) => {
-    // Remove All Active Class
+
     list.forEach((li) => {
       li.classList.remove("active");
       e.currentTarget.classList.add("active");
@@ -170,10 +164,7 @@ list.forEach((li) => {
   });
 });
 </script>
-<!-- /block2 -->
 
-
-<!-- /block3 -->
 
 
 
